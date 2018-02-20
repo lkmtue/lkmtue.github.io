@@ -24,7 +24,7 @@ linkedin_username: lkmtue
 
 # Build settings
 markdown: kramdown
-remote_theme: lkmtue-theme
+theme: lkmtue-theme
 plugins:
   - jekyll-feed
 
