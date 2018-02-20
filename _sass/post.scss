@@ -1,0 +1,19 @@
+.post-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .post {
+    margin: 20px;
+    width: 600px;
+    max-width: 600px;
+
+    .post-title {
+      margin-top: 25px;
+      margin-bottom: 5px;
+    }
+
+    .post-date {
+      margin-bottom: 25px;
+    }
+  }
+}

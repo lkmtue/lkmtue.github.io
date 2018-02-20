@@ -1,0 +1,24 @@
+<div class="nav">
+  {% if page.id %}
+    <div class="nav-left"><a href="/"><span>All posts</span></a></div>
+  {% else %}
+    <div class="nav-left"><h2>{{site.title}}</h2></div>
+  {% endif %}
+  <div class="links">
+    {% if site.email %}
+      <a href="mailto:{{ site.email }}">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+    {% endif %}
+    {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">
+        <i class="fab fa-github-square"></i>
+      </a>
+    {% endif %}
+    {% if site.linkedin_username %}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    {% endif %}
+  </div>
+</div>

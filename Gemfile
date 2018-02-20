@@ -22,6 +22,4 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'lkmtue-theme', '0.1.0', :path => 'lkmtue-theme'
-
 gem "github-pages", group: :jekyll_plugins

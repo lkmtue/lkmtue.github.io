@@ -1,0 +1,24 @@
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .home {
+    margin: 20px;
+    width: 600px;
+    max-width: 600px;
+
+    .post-list {
+      margin-top: 20px;
+
+      .post-list-item {
+        display: flex;
+        margin-bottom: 10px;
+
+        .post-name {
+          flex-grow: 1;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

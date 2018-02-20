@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="post-wrapper">
+  <div class="post">
+    {% include nav.html %}
+    {% if page.title %}
+      <h1 class="post-title">{{ page.title }}</h1>
+    {% endif %}
+    {% if page.date %}
+      <div class="post-date">
+        <time datetime="{{ page.date }}">
+          {{ page.date | date: "%b %d, %Y" }}
+        </time>
+      </div>
+    {% endif %}
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</div>

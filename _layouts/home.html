@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home-wrapper">
+  <div class="home">
+    {% include nav.html %}
+
+    {% if site.posts.size > 0 %}
+      <div class="post-list">
+        {% for post in site.posts %}
+        <div class="post-list-item">
+          <h3 class="post-name">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {% if site.show_excerpts %}
+            {{ post.excerpt }}
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

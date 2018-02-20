@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+
+  .nav-left {
+    flex-grow: 1;
+  }
+
+  .links {
+    a, a:link, a:visited {
+      text-decoration: none;
+      color: black;
+      margin-left: 5px;
+    }
+  }
+}
