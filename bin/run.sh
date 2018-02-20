@@ -1,6 +1,3 @@
-#!/bin/bash
-set -e
+#!/bin/sh
 
-cd lkmtue-theme && rm -rf *.gem && gem build lkmtue-theme.gemspec && cd ..
-jekyll serve --watch
-
+jekyll serve -w --config _config_dev.yml

@@ -2,5 +2,6 @@
 ## Build
 ```
 git clone git@github.com:lkmtue/lkmtue-theme.git
-bin/run.sh
+chmod +x bin/run.sh
+./bin/run.sh
 ```
