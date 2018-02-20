@@ -23,7 +23,7 @@ github_username:  lkmtue
 
 # Build settings
 markdown: kramdown
-theme: lkmtue
+theme: lkmtue-theme
 plugins:
   - jekyll-feed
 
